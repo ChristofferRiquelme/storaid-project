@@ -9,7 +9,7 @@ import youtubeIcon from '../assets/youtube-icon.svg'
 function Header() {
   return (
     <div className="header">
-        <div className="header-item">
+        <div className="header-item contact">
             <div className="header-item-phone">
                 <div className="header-item-phone-image">
                     <img src={phoneIcon} alt="Phone Icon" />
@@ -28,7 +28,7 @@ function Header() {
             </div>
         </div>
 
-        <div className="header-item">
+        <div className="header-item socials">
             <div className="header-item-social">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src={facebookIcon} alt="Facebook Icon" /></a>
             </div>

@@ -5,11 +5,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* MARK: Header Component */
+
 .header {
   background-color: #12372A;
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 20px;
+
+  @media (width >= 768px) {
+    padding: 10px 50px;
+  }
 }
 
 .header p {
@@ -19,22 +25,51 @@
 .header-item {
   display: flex;
   align-items: center;
-  gap: 20px;
+}
+
+.header-item.contact {
+  gap: 30px;
+
+  @media (width >= 768px) {
+    gap: 20px;
+  }
 }
 
 .header-item-phone, .header-item-mail {
   display: flex;
   align-items: center;
-  gap: 10px;
 
   a {
     color: white;
     text-decoration: none;
   }
+
+  @media (width >= 768px) {
+    gap: 10px;
+  }
 }
 
 .header-item-mail {
-  margin-left: 20px;
+  
+  @media (width >= 768px) {
+    margin-left: 20px;
+  }
+}
+
+.header-item-phone-number, .header-item-mail-address {
+  display: none;
+
+  @media (width >= 768px) {
+    display: inline;
+  }
+}
+
+.header-item.socials {
+  gap: 10px;
+
+  @media (width >= 768px) {
+    gap: 20px;
+  }
 }
 
 .header-item-social {
