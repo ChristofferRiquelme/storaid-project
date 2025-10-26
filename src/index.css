@@ -5,6 +5,26 @@
   font-family: "Roboto", sans-serif;
 }
 
+.primary-button {
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1C30C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+}
+
 /* MARK: Header Component */
 
 .header {
@@ -135,25 +155,5 @@ nav {
 
   &:hover {
     color: #F1C30C;
-  }
-}
-
-.nav-item.button {
-  width: 130px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F1C30C;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  a {
-    text-decoration: none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 0.875rem;
   }
 }

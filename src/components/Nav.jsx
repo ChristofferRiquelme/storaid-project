@@ -1,5 +1,6 @@
 import React from 'react'
 import storeaidLogo from '../assets/storeaid-logo.svg'
+import PrimaryButton from './PrimaryButton.jsx'
 
 function Nav() {
   return (
@@ -16,9 +17,7 @@ function Nav() {
             <a href="#">Services</a>
             <a href="#">Contact Us</a>
         </div>
-        <div className="nav-item button">
-            <a href="#">Book Now</a>
-        </div>
+        <PrimaryButton text="Book Now" />
     </nav>
   )
 }
