@@ -8,7 +8,7 @@ function AboutUs() {
     <section className='about-us'>
         <div className="about-us-inner">
             <div className="about-us-items">
-                <div className="about-us-item">
+                <div className="about-us-item image-stats">
                     <div className="about-us-item-image">
                         <img src={AboutUsImage} alt="About Us Image" />
                     </div>
