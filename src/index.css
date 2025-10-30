@@ -33,6 +33,34 @@
   }
 }
 
+.secondary-button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1C30C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+
+  &:hover {
+    background-color: #12372A;
+  }
+
+  &:hover a {
+    color: white;
+  }
+}
+
 /* MARK: Header Component */
 
 .header {
@@ -202,6 +230,10 @@ nav {
   h1, p {
     color: #F1FFEA;
   }
+
+  @media (width >= 1240px) {
+    padding-bottom: 160px;
+  }
 }
 
 .hero-subtitle {
@@ -228,7 +260,7 @@ nav {
 }
 
 .hero-text {
-  margin-top: 20px;
+  margin: 20px 0 30px 0;
 }
 
 .hero-image {

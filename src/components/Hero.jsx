@@ -1,4 +1,5 @@
 import React from 'react'
+import SecondaryButton from './SecondaryButton'
 
 function Hero({ title, subtitle, text, image }) {
   return (
@@ -8,6 +9,7 @@ function Hero({ title, subtitle, text, image }) {
                 {subtitle && <h4 className="hero-subtitle">{subtitle}</h4>}
                 {title && <h1 className="hero-title">{title}</h1>}
                 {text && <p className="hero-text">{text}</p>}
+            <SecondaryButton text="Discover More" />
             </div>
 
         {image && (
