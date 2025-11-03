@@ -476,6 +476,7 @@ nav {
   max-width: 1920px;
   width: 100%;
   margin-top: 10px;
+  background-color: #FAF8EC;
 
   @media (width >= 520px) {
     margin-top: 30px;
@@ -487,10 +488,24 @@ nav {
 }
 
 .brands-inner {
+  max-width: 1370px;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 30px 20px;
 
-  img {
-    width: 100%;
-    object-fit: contain;
+  @media (width >= 520px) {
+    gap: 30px;
+    padding: 40px 20px;
   }
+
+  @media (width >= 768px) {
+    gap: 60px;
+  }
+}
+
+.brands-item img {
+  width: 100%;
+  object-fit: contain;
 }
