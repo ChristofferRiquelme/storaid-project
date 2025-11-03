@@ -7,6 +7,7 @@ import Hero from './components/Hero.jsx'
 import heroImage from './assets/hero-image.svg'
 import AboutUs from './components/AboutUs.jsx'
 import Brands from './components/Brands.jsx'
+import OurServices from './components/OurServices.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')).render(
     />
     <AboutUs />
     <Brands />
+    <OurServices />
   </StrictMode>,
 )
