@@ -469,3 +469,28 @@ nav {
     }
   }
 }
+
+/* MARK: Brands Component */
+
+.brands {
+  max-width: 1920px;
+  width: 100%;
+  margin-top: 10px;
+
+  @media (width >= 520px) {
+    margin-top: 30px;
+  }
+
+  @media (width >= 1346px) {
+    margin-top: 95px;
+  }
+}
+
+.brands-inner {
+  width: 100%;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
