@@ -768,21 +768,31 @@ nav {
 
   @media (width >= 1346px) {
     flex-direction: row;
-    align-items: stretch;
     flex-wrap: nowrap;
   }
 }
 
 .testimonials-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 440px;
   width: 100%;
   background-color: antiquewhite;
   border-radius: 10px;
-  padding: 30px 30px 40px 30px;
+  padding: 20px 20px;
+
+  @media (width >= 768px) {
+    padding: 30px 30px 40px 30px;
+  }
 }
 
 .testimonials-card-text {
-  margin: 40px 0;
+  margin: 30px 0;
+
+  @media (width >= 768px) {
+    margin: 40px 0;
+  }
 }
 
 .testimonials-card-info {
