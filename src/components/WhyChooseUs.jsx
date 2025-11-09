@@ -27,6 +27,7 @@ function WhyChooseUs() {
                             <img src={SecurityIcon} alt="Security Icon" />
                         </div>
                         <div className="why-choose-us-content-item-info">
+                            <h5>Security and Safety</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         </div>
                     </div>
@@ -35,6 +36,7 @@ function WhyChooseUs() {
                             <img src={AffordableIcon} alt="Affordable Icon" />
                         </div>
                         <div className="why-choose-us-content-item-info">
+                            <h5>Flexible and Affordable</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         </div>
                     </div>
@@ -43,6 +45,7 @@ function WhyChooseUs() {
                             <img src={CleanIcon} alt="Clean Icon" />
                         </div>
                         <div className="why-choose-us-content-item-info">
+                            <h5>Clean and Well-Maintained Facilities</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         </div>
                     </div>
@@ -51,6 +54,7 @@ function WhyChooseUs() {
                             <img src={AcessIcon} alt="24/7 Access Icon" />
                         </div>
                         <div className="why-choose-us-content-item-info">
+                            <h5>24/7 and Convenient Access</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         </div>
                     </div>

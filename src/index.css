@@ -9,6 +9,7 @@
   --font-urbanist: "Urbanist", sans-serif;
   --color-primary: #12372A;
   --color-secondary: #F1C30C;
+  --color-third: #FAF8EC;
 }
 
 p {
@@ -863,5 +864,135 @@ nav {
 
   img {
     object-fit: contain;
+  }
+}
+
+/* MARK: Why Choose Us Component */
+
+.why-choose-us {
+  max-width: 1920px;
+  width: 100%;
+  background-color: var(--color-third);
+}
+
+.why-choose-us-inner {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.why-choose-us-subtitle {
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    color: var(--color-secondary);
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  @media (width >= 1320px) {
+    justify-content: flex-start;
+  }
+}
+
+.why-choose-us-title-and-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @media (width >= 1320px) {
+    flex-direction: row;
+  }
+}
+
+.why-choose-us-title {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  h3 {
+    font-family: var(--font-urbanist);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 50px;
+
+  @media (width >= 480px) {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  @media (width >= 1320px) {
+    margin-bottom: 0;
+  }
+  }
+}
+
+.why-choose-us-text {
+  display: none;
+
+  @media (width >= 1320px) {
+    display: block;
+    flex: 1;
+    padding-top: 20px;
+  }
+}
+
+.why-choose-us-content {
+  display: flex;
+  justify-self: center;
+
+  @media (width >= 1320px) {
+    justify-self: auto;
+  }
+}
+
+.why-choose-us-content-items {
+  flex: 1;
+}
+
+.why-choose-us-content-item {
+  display: flex;
+  align-items: flex-start;
+  max-width: 630px;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-content-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  margin-right: 25px;
+
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+}
+
+.why-choose-us-content-item-info {
+
+  h5 {
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.why-choose-us-content-image {
+  display: none;
+
+  @media (width >= 1320px) {
+    display: block;
+    flex: 1;
   }
 }
