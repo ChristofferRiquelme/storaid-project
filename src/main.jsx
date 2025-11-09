@@ -10,6 +10,7 @@ import Brands from './components/Brands.jsx'
 import OurServices from './components/OurServices.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import TestimonialsHeroImage from './assets/testimonials-hero-image.svg'
+import WhyChooseUs from './components/WhyChooseUs.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,5 +30,6 @@ createRoot(document.getElementById('root')).render(
       overlayColor="#12372A"
       overlayOpacity={0.8}
     />
+    <WhyChooseUs />
   </StrictMode>,
 )
