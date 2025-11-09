@@ -254,6 +254,7 @@ nav {
   font-family: var(--font-urbanist);
   font-weight: 700;
   font-size: 1rem;
+  margin-bottom: 20px;
 
   @media (width >= 1024px) {
     font-weight: 700;
@@ -377,7 +378,7 @@ nav {
     font-family: var(--font-urbanist);
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   h3 {
@@ -592,7 +593,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  gap: 20px 30px;
   margin-bottom: 95px;
 
   @media (width >= 768px) {
@@ -600,7 +600,6 @@ nav {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 20px 30px;
-    margin-bottom: 95px;
   }
 
   @media (width >= 1346px) {
@@ -674,17 +673,18 @@ nav {
 }
 
 .our-services-item-image {
-  grid-column: 1;
+  /* grid-column: 1;
   grid-row: 3 / span 2;
-  place-self: center;
+  place-self: center; */
+  display: none;
 
   img {
-    width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
   @media (width >= 768px) {
+    display: block;
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
     place-self: center;
@@ -700,6 +700,7 @@ nav {
   max-width: 390px;
   width: 100%;
   height: 155px;
+  margin-bottom: 20px;
   border: 2px solid #ECECEC;
   border-radius: 10px;
   padding: 25px 20px;
@@ -707,6 +708,10 @@ nav {
 
   &:hover {
     border-color: var(--color-secondary);
+  }
+
+  @media (width >= 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -722,13 +727,14 @@ nav {
 .testimonials {
   max-width: 1920px;
   width: 100%;
+  height: 670px;
 }
 
 .testimonials-inner {
   max-width: 1370px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 90px 20px 0 20px;
 }
 
 .testimonials-content {
@@ -743,19 +749,24 @@ nav {
     font-family: var(--font-urbanist);
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   h3 {
     font-family: var(--font-urbanist);
     font-weight: 700;
     font-size: 2rem;
+    color: white;
     margin-bottom: 20px;
 
     @media (width >= 480px) {
       font-weight: 700;
       font-size: 3rem;
     }
+  }
+
+  p {
+    color: white;
   }
 }
 
@@ -778,12 +789,28 @@ nav {
   justify-content: space-between;
   max-width: 440px;
   width: 100%;
-  background-color: antiquewhite;
+  background-color: white;
   border-radius: 10px;
   padding: 20px 20px;
 
   @media (width >= 768px) {
     padding: 30px 30px 40px 30px;
+  }
+}
+
+.testimonials-card:nth-child(3) {
+  display: none;
+
+  @media (width >= 1346px) {
+    display: block;
+  }
+}
+
+.testimonials-card:nth-child(2) {
+  display: none;
+
+  @media (width >= 950px) {
+    display: block;
   }
 }
 

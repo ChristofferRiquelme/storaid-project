@@ -9,8 +9,7 @@ import AboutUs from './components/AboutUs.jsx'
 import Brands from './components/Brands.jsx'
 import OurServices from './components/OurServices.jsx'
 import Testimonials from './components/Testimonials.jsx'
-import TestimonialsBg from './assets/testimonials-hero-background.svg'
-import TestimonialsImage from './assets/testimonials-hero-image.svg'
+import TestimonialsHeroImage from './assets/testimonials-hero-image.svg'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,8 +25,9 @@ createRoot(document.getElementById('root')).render(
     <Brands />
     <OurServices />
     <Testimonials 
-      bgColorImage={TestimonialsBg}
-      bgMainImage={TestimonialsImage}
+      backgroundImage={TestimonialsHeroImage}
+      overlayColor="#12372A"
+      overlayOpacity={0.8}
     />
   </StrictMode>,
 )

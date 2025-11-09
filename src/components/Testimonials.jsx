@@ -2,7 +2,14 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import TestimonialsQuote from '../assets/testimonials-quote.svg'
 
-function Testimonials() {
+function Testimonials({ backgroundImage, overlayColor, overlayOpacity }) {
+    const backgroundStyle = {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        position: 'relative',
+    }
+
     const [testimonials, setTestimonials] = useState([]);
 
     useEffect(() => {
@@ -15,8 +22,20 @@ function Testimonials() {
     console.log(testimonials);
     
   return (
-    <section className='testimonials'>
-        <div className="testimonials-inner">
+    <section className='testimonials' style={backgroundStyle}>
+        {overlayColor && (
+            <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: overlayColor,
+                opacity: overlayOpacity,
+                pointerEvents: 'none',
+            }} />
+        )}
+        <div className="testimonials-inner" style={{ position: 'relative', zIndex: 1 }}>
             <div className="testimonials-content">
                 <div className="testimonials-content-subtitle">
                     <h4>Testimonials</h4>
