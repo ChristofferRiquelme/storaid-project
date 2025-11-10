@@ -75,6 +75,30 @@ p {
   }
 }
 
+.third-button {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-urbanist);
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+
+  &:hover {
+    border: 2px solid #F1FFEA;
+  }
+}
+
 /* MARK: Header Component */
 
 .header {
@@ -1063,14 +1087,6 @@ nav {
     h5, h6, p {
       color: white;
     }
-
-    /* .pricing-plan-card-feature-list {
-      background-color: var(--color-secondary);
-    }
-
-    .pricing-plan-card-feature-list-icon {
-      background-color: var(--color-primary);
-    } */
   }
 }
 

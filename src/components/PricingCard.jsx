@@ -1,7 +1,6 @@
 import React from 'react'
-import PrimaryButton from './PrimaryButton'
+import ThirdButton from './ThirdButton'
 import PriceIcon from '../assets/price-icon.svg'
-import ListIcon from '../assets/list-icon.svg'
 
 function PricingCard({unit, number}) {
   return (
@@ -70,7 +69,7 @@ function PricingCard({unit, number}) {
                         </div>
                     </div>
                     <div className="pricing-plan-card-button">
-                        <PrimaryButton text="Rent Now" />
+                        <ThirdButton text="Rent Now" />
                     </div>
                 </div>
   )
