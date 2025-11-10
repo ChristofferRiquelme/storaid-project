@@ -11,6 +11,7 @@ import OurServices from './components/OurServices.jsx'
 import Testimonials from './components/Testimonials.jsx'
 import TestimonialsHeroImage from './assets/testimonials-hero-image.svg'
 import WhyChooseUs from './components/WhyChooseUs.jsx'
+import PricingPlan from './components/PricingPlan.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -31,5 +32,6 @@ createRoot(document.getElementById('root')).render(
       overlayOpacity={0.8}
     />
     <WhyChooseUs />
+    <PricingPlan />
   </StrictMode>,
 )
