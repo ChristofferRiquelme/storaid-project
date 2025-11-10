@@ -32,9 +32,9 @@ p {
 
   a {
     text-decoration: none;
-    color: black;
+    color: var(--color-primary);
     font-family: var(--font-urbanist);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.875rem;
   }
 
@@ -1038,18 +1038,48 @@ nav {
   }
 }
 
+.pricing-plan-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  @media (width >= 768px) {
+    flex-direction: row;
+  }
+}
+
 .pricing-plan-card {
   max-width: 320px;
   width: 100%;
   border: 2px solid #ECECEC;
   border-radius: 10px;
   padding: 40px 35px;
-  cursor: pointer;
   background-color: #F1FFEA;
 
   &:hover {
     background-color: var(--color-primary);
+
+    h5, h6, p {
+      color: white;
+    }
+
+    /* .pricing-plan-card-feature-list {
+      background-color: var(--color-secondary);
+    }
+
+    .pricing-plan-card-feature-list-icon {
+      background-color: var(--color-primary);
+    } */
   }
+}
+
+.pricing-plan-card:hover .pricing-plan-card-feature-list {
+  background-color: var(--color-secondary);
+}
+
+.pricing-plan-card:hover .pricing-plan-card-feature-list-icon {
+  color: var(--color-primary);
 }
 
 .pricing-plan-card-unit {
@@ -1069,7 +1099,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   position: relative;
 }
 
@@ -1081,6 +1110,7 @@ nav {
 
 .pricing-plan-card-price-number {
   margin: 20px 0 30px 0;
+  padding-left: 10px;
 
   h3 {
     font-family: var(--font-urbanist);
@@ -1105,6 +1135,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: var(--color-primary);
 }
 
 .pricing-plan-card-breakline {
@@ -1127,6 +1158,25 @@ nav {
 
 .pricing-plan-card-feature-list {
   margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.pricing-plan-card-feature-list-icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.pricing-plan-card-feature-list-text {
+  color: var(--color-primary);
 }
 
 .pricing-plan-card-button {

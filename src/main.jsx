@@ -12,6 +12,7 @@ import Testimonials from './components/Testimonials.jsx'
 import TestimonialsHeroImage from './assets/testimonials-hero-image.svg'
 import WhyChooseUs from './components/WhyChooseUs.jsx'
 import PricingPlan from './components/PricingPlan.jsx'
+import PricingCard from './components/PricingCard.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
