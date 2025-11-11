@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import calendarIcon from '../assets/calendar-icon.svg'
+import BlogDescriptionToggle from './BlogDescriptionToggle.jsx'
 
 function BlogAndNews() {
     const [blogs, setBlogs] = useState([]);
@@ -44,7 +45,47 @@ function BlogAndNews() {
                         <h6>{blogs[0]?.title}</h6>
                     </div>
                     <div className="blog-and-news-card-description">
-                        <p>{blogs[0]?.description}</p>
+                        <BlogDescriptionToggle description={blogs[0]?.description} />
+                    </div>
+                    <div className="blog-and-news-card-toggle"></div>
+                </div>
+                <div className="blog-and-news-card">
+                    <div className="blog-and-news-card-image">
+                        <img src={blogs[1]?.imageUrl} alt="Blog Image" />
+                    </div>
+                    <div className="blog-and-news-card-date">
+                        <img src={calendarIcon} alt="Calendar Icon" />
+                        <p>{new Date(blogs[1]?.created).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        })}</p>
+                    </div>
+                    <div className="blog-and-news-card-title">
+                        <h6>{blogs[1]?.title}</h6>
+                    </div>
+                    <div className="blog-and-news-card-description">
+                        <BlogDescriptionToggle description={blogs[1]?.description} />
+                    </div>
+                    <div className="blog-and-news-card-toggle"></div>
+                </div>
+                <div className="blog-and-news-card">
+                    <div className="blog-and-news-card-image">
+                        <img src={blogs[2]?.imageUrl} alt="Blog Image" />
+                    </div>
+                    <div className="blog-and-news-card-date">
+                        <img src={calendarIcon} alt="Calendar Icon" />
+                        <p>{new Date(blogs[2]?.created).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        })}</p>
+                    </div>
+                    <div className="blog-and-news-card-title">
+                        <h6>{blogs[2]?.title}</h6>
+                    </div>
+                    <div className="blog-and-news-card-description">
+                        <BlogDescriptionToggle description={blogs[2]?.description} />
                     </div>
                     <div className="blog-and-news-card-toggle"></div>
                 </div>
