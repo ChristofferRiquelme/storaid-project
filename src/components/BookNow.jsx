@@ -3,7 +3,7 @@ import PrimaryButton from './PrimaryButton'
 
 function BookNow() {
   return (
-    <div className="book-now">
+    <section className="book-now">
         <div className="book-now-inner">
             <div className="book-now-title">
                 <h3>Looking for Secure and Flexible Storage? Find Your Perfect Fit With Us.</h3>
@@ -15,7 +15,7 @@ function BookNow() {
                 <PrimaryButton text="Book Now" />
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

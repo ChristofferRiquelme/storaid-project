@@ -1278,3 +1278,114 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+/* MARK: Blog and News Component */
+
+.blog-and-news {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.blog-and-news-inner {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.blog-and-news-subtitle {
+  margin-bottom: 30px;
+
+  h4 {
+    color: var(--color-secondary);
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
+
+.blog-and-news-title-and-text {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 30px;
+}
+
+.blog-and-news-title {
+  flex: 1;
+
+  h3 {
+    font-family: var(--font-urbanist);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-primary);
+
+    @media (width >= 480px) {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+  }
+}
+
+.blog-and-news-text {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+
+  p {
+    color: var(--color-primary);
+  }
+}
+
+.blog-and-news-card {
+  max-width: 430px;
+  width: 100%;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 25px 25px 50px 25px;
+  background-color: var(--color-primary);
+
+  &:hover {
+    border-color: var(--color-secondary);
+  }
+}
+
+.blog-and-news-card-image {
+  max-width: 380px;
+  width: 100%;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+}
+
+.blog-and-news-card-date {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+
+  p {
+    color: white;
+    font-size: 0.875rem;
+  }
+}
+
+.blog-and-news-card-title {
+  margin: 20px 0;
+
+  h6 {
+    font-family: var(--font-urbanist);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+  }
+}
+
+.blog-and-news-card-description {
+
+  p {
+    color: white;
+  }
+}

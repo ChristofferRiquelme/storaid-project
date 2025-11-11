@@ -18,8 +18,6 @@ function Testimonials({ backgroundImage, overlayColor, overlayOpacity }) {
             .then(data => setTestimonials(data))
             .catch(error => console.error('Error fetching testimonials:', error));
     }, []);
-
-    console.log(testimonials);
     
   return (
     <section className='testimonials' style={backgroundStyle}>
