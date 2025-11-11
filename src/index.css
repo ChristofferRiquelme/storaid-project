@@ -1351,9 +1351,10 @@ nav {
 }
 
 .blog-and-news-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
   gap: 30px;
 
   @media (width >= 940px) {
@@ -1372,8 +1373,10 @@ nav {
   }
 
   @media (width >= 1370px) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
   }
 }
 
