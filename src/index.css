@@ -1345,7 +1345,17 @@ nav {
   background-color: var(--color-primary);
 
   &:hover {
-    border-color: var(--color-secondary);
+    background-color: #F1FFEA;
+    border-color: #F1FFEA;
+
+    .blog-and-news-card-date p,
+    .blog-and-news-card-title h6,
+    .blog-and-news-card-description p {
+      color: var(--color-primary);
+    }
+    .blog-and-news-card-date img {
+      filter: invert(1);
+    }
   }
 }
 
