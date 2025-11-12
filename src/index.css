@@ -1646,5 +1646,8 @@ nav {
 .footer-link-terms-and-conditions, .footer-link-privacy-policy {
   display: flex;
   align-items: center;
-  gap: 10px;
+  
+  img {
+    margin-right: 10px;
+  }
 }

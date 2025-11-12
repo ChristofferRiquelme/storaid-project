@@ -11,12 +11,10 @@ function Footer() {
                 </div>
                 <div className="footer-links">
                     <div className="footer-link-terms-and-conditions">
-                        <img src={linkArrowIcon} alt="Link arrow icon" />
-                        <a href="/terms-and-conditions">Terms & Conditions</a>
+                        <a href="/terms-and-conditions"><img src={linkArrowIcon} alt="Link arrow icon" />Terms & Conditions</a>
                     </div>
                     <div className="footer-link-privacy-policy">
-                        <img src={linkArrowIcon} alt="Link arrow icon" />
-                        <a href="/privacy-policy">Privacy Policy</a>
+                        <a href="/privacy-policy"><img src={linkArrowIcon} alt="Link arrow icon" />Privacy Policy</a>
                     </div>
                 </div>
             </div>
