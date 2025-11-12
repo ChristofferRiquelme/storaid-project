@@ -1651,3 +1651,107 @@ nav {
     margin-right: 10px;
   }
 }
+
+/* MARK: FAQ Component */
+
+.faq {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.faq-inner {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+
+  @media (width >= 1370px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.faq-content-titles-and-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  text-align: center;
+
+  @media (width >= 1370px) {
+    text-align: left;
+  }
+
+  h4 {
+    color: var(--color-secondary);
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-family: var(--font-urbanist);
+    font-weight: 700;
+    font-size: 2rem;
+
+    @media (width >= 480px) {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+  }
+}
+
+.faq-content-accordions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.faq-content-accordion-container {
+  max-width: 670px;
+  width: 100%;
+}
+
+.faq-content-accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: var(--font-urbanist);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-content-accordion.active {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.faq-content-accordion-icon img.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.faq-content-accordion-icon img {
+  transition: transform 0.3s ease;
+}
+
+.faq-content-accordion-panel {
+  padding: 20px 50px;
+}
+
+
+
