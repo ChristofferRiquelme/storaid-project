@@ -18,6 +18,7 @@ import BookNow from './components/BookNow.jsx'
 import BlogAndNews from './components/BlogAndNews.jsx'
 import SubscribeOurNewsletter from './components/SubscribeOurNewsletter.jsx'
 import Footer from './components/Footer.jsx'
+import Faq from './components/Faq.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -43,5 +44,6 @@ createRoot(document.getElementById('root')).render(
     <BlogAndNews />
     <SubscribeOurNewsletter />
     <Footer />
+    <Faq />
   </StrictMode>,
 )
