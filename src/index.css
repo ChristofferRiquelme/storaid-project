@@ -1783,7 +1783,7 @@ nav {
   background-color: rgba(241, 255, 234, 0.56);
   max-width: 660px;
   width: 100%;
-  padding: 50px 60px 0 50px;
+  padding: 50px 60px 130px 50px;
 }
 
 .find-us-content-description-title-and-text {
@@ -1840,11 +1840,11 @@ nav {
 
 .find-us-content-description-socials {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .find-us-content-description-socials-text {
-  margin-bottom: 130px;
 
   h5 {
     font-family: var(--font-urbanist);
