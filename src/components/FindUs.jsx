@@ -7,6 +7,7 @@ import facebookIcon from '../assets/facebook-icon.svg'
 import xIcon from '../assets/x-icon.svg'
 import instagramIcon from '../assets/instagram-icon.svg'
 import youtubeIcon from '../assets/youtube-icon.svg'
+import socialsLine from '../assets/socials-line.svg'
 
 function FindUs() {
   return (
@@ -52,12 +53,22 @@ function FindUs() {
                         <div className="find-us-content-description-socials-text">
                             <h5>Our Social Media</h5>
                         </div>
-                        <div className="find-us-content-description-socials-line"></div>
+                        <div className="find-us-content-description-socials-line">
+                            <img src={socialsLine} alt="Socials Line" />
+                        </div>
                         <div className="find-us-content-description-socials-icons">
-                            <img src={facebookIcon} alt="Facebook Icon" />
-                            <img src={xIcon} alt="X Icon" />
-                            <img src={instagramIcon} alt="Instagram Icon" />
-                            <img src={youtubeIcon} alt="YouTube Icon" />
+                            <div className='find-us-content-description-socials-icon'>
+                                <img src={facebookIcon} alt="Facebook Icon" />
+                            </div>
+                            <div className='find-us-content-description-socials-icon'>
+                                <img src={xIcon} alt="X Icon" />
+                            </div>
+                            <div className='find-us-content-description-socials-icon'>
+                                <img src={instagramIcon} alt="Instagram Icon" />
+                            </div>
+                            <div className='find-us-content-description-socials-icon'>
+                                <img src={youtubeIcon} alt="YouTube Icon" />
+                            </div>
                         </div>
                     </div>
                 </div>

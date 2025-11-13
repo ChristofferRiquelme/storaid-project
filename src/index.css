@@ -1753,5 +1753,118 @@ nav {
   padding: 20px 50px;
 }
 
+/* MARK: Find Us Component */
 
+.find-us {
+  max-width: 1920px;
+  width: 100%;
+  background-color: var(--color-primary);
+  margin-top: 30px; /* Ta bort sen */
+}
 
+.find-us-inner {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.find-us-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-us-content-image {
+  display: flex;
+  align-items: flex-end;
+}
+
+.find-us-content-description {
+  background-color: rgba(241, 255, 234, 0.56);
+  max-width: 660px;
+  width: 100%;
+  padding: 50px 60px 0 50px;
+}
+
+.find-us-content-description-title-and-text {
+  margin-bottom: 30px;
+
+    h3 {
+    font-family: var(--font-urbanist);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-primary);
+
+    @media (width >= 480px) {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+  }
+}
+
+.find-us-content-description-contact {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.find-us-content-description-contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.find-us-content-description-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  h5 {
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  p {
+    color: var(--color-primary);
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+  }
+}
+
+.find-us-content-description-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.find-us-content-description-socials-text {
+  margin-bottom: 130px;
+
+  h5 {
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+  }
+}
+
+.find-us-content-description-socials-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.find-us-content-description-socials-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
