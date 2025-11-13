@@ -24,7 +24,7 @@ function FindUs() {
                     </div>
                     <div className="find-us-content-description-contact">
                         <div className="find-us-content-description-contact-icon">
-                            <img src={phoneIcon} alt="Phone Icon" />
+                            <a href="callto:+46812312244"><img src={phoneIcon} alt="Phone Icon" /></a>
                         </div>
                         <div className="find-us-content-description-contact-info">
                             <h5>Call Center</h5>
@@ -33,7 +33,7 @@ function FindUs() {
                     </div>
                     <div className="find-us-content-description-contact">
                         <div className="find-us-content-description-contact-icon">
-                            <img src={mailIcon} alt="Mail Icon" />
+                            <a href="mailto:contact@domain.com"><img src={mailIcon} alt="Mail Icon" /></a>
                         </div>
                         <div className="find-us-content-description-contact-info">
                             <h5>Email Address</h5>
@@ -42,7 +42,7 @@ function FindUs() {
                     </div>
                     <div className="find-us-content-description-contact">
                         <div className="find-us-content-description-contact-icon">
-                            <img src={pinLocationIcon} alt="Location Pin Icon" />
+                            <a href="https://www.google.com/maps?q=Klarabergsviadukten+90,+Stockholm" target="_blank" rel="noopener noreferrer"><img src={pinLocationIcon} alt="Location Pin Icon" /></a>
                         </div>
                         <div className="find-us-content-description-contact-info">
                             <h5>Location</h5>
