@@ -121,6 +121,13 @@ span {
   color: red;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000000s ease-in-out 0s;
+}
+
 .body-first-row, .body-third-row, .body-fourth-row {
   display: flex;
   flex-direction: column;
@@ -132,6 +139,11 @@ span {
   padding-left: 20px;
   border: 2px solid var(--color-secondary);
   border-radius: 5px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
 }
 
 .body-first-row input::placeholder, .body-second-row input::placeholder, .body-third-row input::placeholder, .body-fourth-row input::placeholder {
@@ -157,6 +169,12 @@ span {
   padding-top: 20px;
   border: 2px solid var(--color-secondary);
   border-radius: 5px;
+  resize: none;
+
+  &:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
 }
 
 .comment-section::placeholder {
