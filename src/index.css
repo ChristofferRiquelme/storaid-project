@@ -99,6 +99,81 @@ p {
   }
 }
 
+.contact-form {
+  max-width: 670px;
+  width: 100%;
+  background-color: var(--color-third);
+  border-radius: 10px;
+}
+
+.body {
+  padding: 30px 30px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  color: var(--color-primary);
+}
+
+span {
+  color: red;
+}
+
+.body-first-row, .body-third-row, .body-fourth-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.body-first-row input, .body-second-row input, .body-third-row input, .body-fourth-row input {
+  height: 60px;
+  padding-left: 20px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 5px;
+}
+
+.body-first-row input::placeholder, .body-second-row input::placeholder, .body-third-row input::placeholder, .body-fourth-row input::placeholder {
+  color: var(--color-secondary);
+}
+
+.body-second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-second-row-email, .body-second-row-phone {
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-section {
+  height: 150px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 5px;
+}
+
+.comment-section::placeholder {
+  color: var(--color-secondary);
+}
+
+.body-submit-button {
+  width: 155px;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+}
+
 /* MARK: Header Component */
 
 .header {
