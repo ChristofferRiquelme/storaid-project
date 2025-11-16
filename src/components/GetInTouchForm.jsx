@@ -54,7 +54,7 @@ function GetInTouchForm() {
             <div className='contact-form-thank-you'>
                 <h2>Thank You!</h2>
                 <p>Your message has been sent successfully. We will get back to you shortly.</p>
-                <button onClick={handleOk}>OK</button>
+                <button className='contact-form-thank-you-button' onClick={handleOk}>OK</button>
             </div>
         );
     }
