@@ -2220,3 +2220,59 @@ nav {
 .booking-unit-form {
   flex: 1;
 }
+
+/* MARK: Page Not Found Component */
+
+.page-not-found {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1010px;
+  background-color: var(--color-primary);
+}
+
+.page-not-found-inner {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.page-not-found-content {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h5 {
+    font-family: var(--font-urbanist);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--color-secondary);
+
+    @media (width >= 680px) {
+      font-size: 5rem;
+    }
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.page-not-found-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
