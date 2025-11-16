@@ -1,7 +1,7 @@
 import React from 'react'
 import SecondaryButton from './SecondaryButton'
 
-function Hero({ title, subtitle, text, image }) {
+function Hero({ title, subtitle, text, image, button }) {
   return (
     <section className='hero'>
         <div className="hero-inner">
@@ -9,7 +9,9 @@ function Hero({ title, subtitle, text, image }) {
                 {subtitle && <h4 className="hero-subtitle">{subtitle}</h4>}
                 {title && <h1 className="hero-title">{title}</h1>}
                 {text && <p className="hero-text">{text}</p>}
-            <SecondaryButton text="Discover More" />
+                {button && <div className="hero-button">
+                    <SecondaryButton text={button.text} link={button.link} />
+                </div>}
             </div>
 
         {image && (

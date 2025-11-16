@@ -1,25 +1,28 @@
-import React from 'react'
-import storeaidLogo from '../assets/storeaid-logo.svg'
-import PrimaryButton from './PrimaryButton.jsx'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import storeaidLogo from '../assets/storeaid-logo.svg';
+import PrimaryButton from './PrimaryButton.jsx';
 
 function Nav() {
   return (
     <nav>
         <div className="nav-item logo">
-          <img src={storeaidLogo} alt="Storeaid Logo" />
+          <Link to="/">
+            <img src={storeaidLogo} alt="Storeaid Logo" />
+          </Link>
         </div>
         <span className="material-icons-outlined menu-icon">
             menu
         </span>
         <div className="nav-item links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contact Us</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/contact">Contact Us</Link>
         </div>
-        <PrimaryButton text="Book Now" />
+        <PrimaryButton text="Book Now" to="/booking" />
     </nav>
   )
 }
 
-export default Nav
+export default Nav;

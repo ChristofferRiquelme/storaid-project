@@ -12,7 +12,7 @@ function BookNow() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
             </div>
             <div className="book-now-button">
-                <PrimaryButton text="Book Now" />
+                <PrimaryButton text="Book Now" to="/booking" />
             </div>
         </div>
     </section>
