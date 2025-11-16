@@ -43,6 +43,5 @@ createRoot(document.getElementById('root')).render(
     <BlogAndNews />
     <SubscribeOurNewsletter />
     <Footer />
-    <GetInTouch />
   </StrictMode>,
 )
