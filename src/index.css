@@ -235,6 +235,11 @@ input:-webkit-autofill:active {
   }
 }
 
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+}
+
 /* MARK: Header Component */
 
 .header {
